@@ -1,4 +1,14 @@
-# spring-boot-actuator
-This repository contains code related to my Spring Boot Acutator course.
+# spring-boot-actuator notes
 
-You can learn more about my courses [here](http://courses.springframework.guru/courses/) on my site.
+
+#### remote shell:
+`ssh -p 2000 -l user localhost`
+
+#### changing logging level
+`ssh -p 2000 -l user localhost`
+
+`repl groovy`
+
+`logger = org.slf4j.LoggerFactory.getLogger("guru.springframework.services.LogOutputGeneratorService")`
+
+`logger.setLevel(ch.qos.logback.classic.Level.ERROR`
