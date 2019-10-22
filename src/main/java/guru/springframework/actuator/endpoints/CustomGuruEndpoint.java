@@ -15,7 +15,7 @@ public class CustomGuruEndpoint extends AbstractEndpoint<List<String>> {
 
     @Override
     public List<String> invoke() {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>(3);
 
         list.add("Umphrey's");
         list.add("McGee");
