@@ -17,6 +17,6 @@ public class CustomHealthIndicator implements HealthIndicator {
         if (random.nextBoolean())
             return Health.down().withDetail("ERR-001", "Random Failure").build();
 
-        return Health.up().build();
+        return Health.up().withDetail("message", "This is my custom health indicator").build();
     }
 }
