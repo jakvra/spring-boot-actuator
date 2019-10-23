@@ -243,9 +243,9 @@ management.port=8081
 ```
 
 ```http request
-http://localhost:80801/endpoints/metrics
-http://localhost:80801/endpoints/health
-http://localhost:80801/endpoints/system/info
+http://localhost:8081/endpoints/metrics
+http://localhost:8081/endpoints/health
+http://localhost:8081/endpoints/system/info
 ```
 
 ### remote shell:
