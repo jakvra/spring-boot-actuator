@@ -47,7 +47,7 @@ to add git information use maven plugin
     </plugins>
 </build>
 ```
-produces:
+http://{{ hostname  }}/info produces:
 ```json
 {
   "runtime": "just a test",
@@ -240,6 +240,12 @@ endpoints.info.path=/system/info
 
 #port used to expose actuator
 management.port=8081
+```
+
+```http request
+http://localhost:80801/endpoints/metrics
+http://localhost:80801/endpoints/health
+http://localhost:80801/endpoints/system/info
 ```
 
 ### remote shell:
