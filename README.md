@@ -47,7 +47,32 @@ to add git information use maven plugin
     </plugins>
 </build>
 ```
-
+produces:
+```json
+{
+  "runtime": "just a test",
+  "author": {
+    "name": "Jakub Vrana",
+    "email": "jvrana@monetplus.cz"
+  },
+  "app": {
+    "java": {
+      "source": "1.8",
+      "target": "1.8"
+    },
+    "encoding": "UTF-8"
+  },
+  "git": {
+    "commit": {
+      "time": 1571739118000,
+      "id": "a7ac9d6"
+    },
+    "branch": "master"
+  },
+  "JVR": "just a example of InfoContributoer",
+  "Chuck Norris": "Chuck Norris is the reason why Waldo is hiding."
+}
+```
 
 #### metrics
 To add custom metrics implement **_CounterService_** or **_GaugeService_** interfaces (they are some spring implementations)
